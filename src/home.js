@@ -2,6 +2,8 @@ import createEl from "./util.js";
 
 export default function loadHome() {
     const content = document.querySelector("#content");
+    const btn = document.querySelector("#home");
+    btn.classList.add("active");
     const page = createEl("div", "home");
 
     const main = createEl("div", "main");

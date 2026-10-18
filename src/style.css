@@ -70,6 +70,12 @@ nav button:hover {
     border-color: var(--sub-text-color);
 }
 
+nav button.active {
+    color: var(--primary-color);
+    background-color: var(--select-button-color);
+    border-color: var(--select-button-color);
+}
+
 /* ---------- Content area ---------- */
 
 #content {

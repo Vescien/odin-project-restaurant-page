@@ -2,6 +2,8 @@ import createEl from "./util.js";
 
 export default function loadAbout() {
     const content = document.querySelector("#content");
+    const btn = document.querySelector("#about");
+    btn.classList.add("active");
     const page = createEl("div", "home");
 
     const title = createEl("h1", "title", "Visit us");
