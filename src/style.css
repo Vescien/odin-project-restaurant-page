@@ -63,11 +63,12 @@ button {
     border: 1px solid var(--border-color);
     border-radius: 2rem;
     padding: 0.75rem 1.5rem;
-    transition: background-color 0.2s, border-color 0.2s;
+    transition: filter .3s, border-color 0.2s;
 }
 
-nav button:hover {
+button:hover {
     border-color: var(--sub-text-color);
+    filter: brightness(1.1);
 }
 
 nav button.active {
@@ -127,6 +128,8 @@ nav button.active {
     color: var(--primary-color);
     background-color: var(--select-button-color);
     padding: 1rem 1.5rem;
+    border: none;
+    transition: 0.3s;
 }
 
 .hero-image {
@@ -234,6 +237,13 @@ footer {
     font-size: 0.9rem;
     color: var(--sub-text-color);
     border-top: 1px solid var(--border-color);
+}
+
+/* ---------- Links ---------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* ---------- Small screens ---------- */
