@@ -139,6 +139,8 @@ nav button.active {
     border-radius: 1.5rem;
 }
 
+/* ---------- Menu ---------- */
+
 .title {
     font-size: 3rem;
     font-family: var(--font-heading);
@@ -172,6 +174,25 @@ nav button.active {
 
 .price {
     color: var(--select-button-color);
+}
+
+/* ---------- About ---------- */
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.map-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+}
+
+.info-container .card {
+    height: 200px;
 }
 
 /* ---------- Feature cards ---------- */
