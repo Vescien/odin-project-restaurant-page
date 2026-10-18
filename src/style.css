@@ -19,7 +19,6 @@ html {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
-    font: inherit;
 }
 
 body {
@@ -55,6 +54,21 @@ nav {
 
 /* ---------- Buttons ---------- */
 
+button {
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--main-text-color);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+nav button:hover {
+    border-color: var(--sub-text-color);
+}
 
 /* ---------- Content area ---------- */
 
@@ -63,11 +77,90 @@ nav {
     flex: 1;
 }
 
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 4.5rem;
+}
+
 /* ---------- Hero ---------- */
 
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.top-description {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 1rem;
+    color: var(--select-button-color);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--sub-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.hero-button {
+    color: var(--primary-color);
+    background-color: var(--select-button-color);
+    padding: 1rem 1.5rem;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 380px;
+    background-color: var(--secondary-color);
+    border: 1px dashed rgba(168, 182, 174, 0.35);
+    border-radius: 1.5rem;
+}
 
 /* ---------- Feature cards ---------- */
 
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--sub-text-color);
+}
 
 /* ---------- Footer ---------- */
 
