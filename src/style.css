@@ -87,7 +87,6 @@ nav button.active {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -140,11 +139,47 @@ nav button.active {
     border-radius: 1.5rem;
 }
 
+.title {
+    font-size: 3rem;
+    font-family: var(--font-heading);
+}
+
+.subtext {
+    color: var(--sub-text-color);
+    font-weight: 600;
+    margin: 1rem 0 2rem;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .7rem;
+}
+
+.menu-lower {
+    color: var(--sub-text-color);
+    font-size: 1rem;
+}
+
+.price {
+    color: var(--select-button-color);
+}
+
 /* ---------- Feature cards ---------- */
 
 .info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
     gap: 1.5rem;
 }
 

@@ -7,7 +7,7 @@ export default function loadHome() {
     const page = createEl("div", "home");
 
     const title = createEl("h1", "title", "Menu");
-    const subtext = createEl("p", "subtext", "Everything os cooked to order over the fire");
+    const subtext = createEl("p", "subtext", "Everything is cooked to order over the fire");
     const menuContainer = createEl("div", "menu-container");
 
     const menu = [
