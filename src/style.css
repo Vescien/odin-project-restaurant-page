@@ -136,7 +136,7 @@ nav button.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 380px;
+    aspect-ratio: 7 / 5;
     background-color: var(--secondary-color);
     border: 1px dashed rgba(168, 182, 174, 0.35);
     border-radius: 1.5rem;
@@ -257,3 +257,49 @@ a {
 }
 
 /* ---------- Small screens ---------- */
+
+@media (max-width: 600px) {
+    .hero-button {
+        display: block;
+        width: 100%;
+    }
+
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-card {
+        grid-column: 1;
+    }
+
+}
+
+@media (max-width: 900px) {
+    header,
+    .home {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .main,
+    .info,
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    header,
+        .home {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
