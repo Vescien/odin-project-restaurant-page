@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('fonts/Fraunces-9ptBlack.woff2') format('woff2'),
+        url('fonts/Fraunces-9ptBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope-ExtraLight.woff2') format('woff2'),
+        url('fonts/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary-color: #0F2A23;
     --secondary-color: #17382F;
