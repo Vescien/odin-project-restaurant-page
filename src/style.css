@@ -234,9 +234,19 @@ footer {
     justify-content: center;
     align-items: center;
     height: 50px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--sub-text-color);
     border-top: 1px solid var(--border-color);
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+svg {
+    fill: var(--sub-text-color);
 }
 
 /* ---------- Links ---------- */
