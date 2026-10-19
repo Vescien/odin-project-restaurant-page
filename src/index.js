@@ -14,11 +14,19 @@ function showTab(loadFn) {
     menuBtn.classList.remove("active");
     aboutBtn.classList.remove("active");
     loadFn();
+    
+    if (loadFn === loadHome) {
+        enableMenuBtn();
+    }
 }
 
-document.querySelector("#home").addEventListener("click", () => showTab(loadHome));
-document.querySelector("#menu").addEventListener("click", () => showTab(loadMenu));
-document.querySelector("#about").addEventListener("click", () => showTab(loadAbout));
+function enableMenuBtn() {
+    const seeMenuBtn = document.querySelector(".hero-button");
+    seeMenuBtn.addEventListener("click", () => showTab(loadMenu));
+}
 
-loadHome();
+homeBtn.addEventListener("click", () => showTab(loadHome));
+menuBtn.addEventListener("click", () => showTab(loadMenu));
+aboutBtn.addEventListener("click", () => showTab(loadAbout));
 
+showTab(loadHome);
