@@ -287,7 +287,39 @@ a {
 
 /* ---------- Small screens ---------- */
 
-@media (max-width: 700px) {
+@media (max-width: 1280px) {
+
+    header,
+    .home {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .main,
+    .info,
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header,
+    .home {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+
     .hero-button {
         display: block;
         width: 100%;
@@ -336,35 +368,5 @@ a {
     .dropdown svg {
         cursor: pointer;
         fill: var(--main-text-color);
-    }
-}
-
-@media (max-width: 900px) {
-    header,
-    .home {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .main,
-    .info,
-    .menu-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-title {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 1280px) {
-    header,
-        .home {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-
-    .hero-title {
-        font-size: 3rem;
     }
 }
