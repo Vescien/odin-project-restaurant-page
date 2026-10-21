@@ -39,6 +39,10 @@ html {
     margin: 0;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -57,6 +61,7 @@ header {
     height: 85px;
     padding: 0 4.5rem;
     border-bottom: 1px solid var(--border-color);
+    position: relative;
 }
 
 .brand {
@@ -68,6 +73,10 @@ header {
 nav {
     display: flex;
     gap: 0.75rem;
+}
+
+.dropdown {
+    display: none;
 }
 
 /* ---------- Buttons ---------- */
@@ -261,10 +270,12 @@ footer {
     display: flex;
     align-items: center;
     gap: .5rem;
+    color: var(--main-text-color);
+    font-weight: 600;
 }
 
-svg {
-    fill: var(--sub-text-color);
+.github svg {
+    fill: var(--main-text-color);
 }
 
 /* ---------- Links ---------- */
@@ -276,10 +287,16 @@ a {
 
 /* ---------- Small screens ---------- */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .hero-button {
         display: block;
         width: 100%;
+    }
+
+    nav button {
+        padding: .75rem 3rem;
+        border: none;
+        border-radius: 1rem;
     }
 
     .info-container {
@@ -290,6 +307,36 @@ a {
         grid-column: 1;
     }
 
+    nav {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 1.5rem;
+        z-index: 100;
+        background-color: var(--secondary-color);
+        border: 1px solid var(--border-color);
+        border-radius: 1rem;
+        padding: .5rem;
+        gap: .3rem;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--sub-text-color);
+        border-radius: 50%;
+        aspect-ratio: 1;
+        padding: 5px;
+    }
+
+    .dropdown svg {
+        cursor: pointer;
+        fill: var(--main-text-color);
+    }
 }
 
 @media (max-width: 900px) {
